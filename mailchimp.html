@@ -30,18 +30,12 @@
       margin-bottom: 10px;
       margin-left: 0;
       text-align: left;
-      text-transform: uppercase;
+      font-weight: bold;
     }
 
     h1 {
       font-size: 20px;
-      font-weight: bold;
       margin-bottom: 20px;
-    }
-
-    h2, h3, h4 {
-      font-weight: normal;
-      letter-spacing: 0.2em;
     }
 
     h2 {
@@ -119,13 +113,14 @@
       color: #707070;
       font-size: 11px;
       line-height: 150%;
+      text-align: center;
     }
 
     .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts /* Yahoo! Mail Override */
     {
       color: #6880BC; /* HackPrinceton blue */
       font-weight: normal;
-      text-decoration: underline;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -140,7 +135,7 @@
               <table border="0" cellpadding="0" cellspacing="0" id="templateHeader">
                 <tr>
                   <td class="headerContent">
-                    <img src="https://gallery.mailchimp.com/53efbc735a8d749c8eca8db43/images/a920dbb5-892e-4f6b-8613-9c47187cc526.png" alt="HackPrinceton" id="headerImage" />
+                    <img src="https://gallery.mailchimp.com/53efbc735a8d749c8eca8db43/images/897dafbc-ece7-49e5-9a09-0ac0a2a30836.png" alt="HackPrinceton" id="headerImage" />
                   </td>
                 </tr>
               </table>
@@ -153,12 +148,12 @@
                 <tr>
                   <td valign="top">
                     <div class="bodyContent">
-                      <h1 mc:edit="header">Thanks for Registering</h1>
+                      <h1 mc:edit="header">Hello World</h1>
 
                       <div mc:edit="body">
-                        <p>Hello,</p>
+                        <p>Hi *|FNAME|*,</p>
 
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <a href="https://hackprinceton.com/" target="_blank">Donec odio.</a> Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
 
                         <h2>Heading</h2>
                         <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</p>
@@ -166,21 +161,21 @@
                         <h2>Heading</h2>
                         <p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</p>
 
-                        <p>Best,<br />HackPrinceton Team</p>
+                        <p>Best,<br />The HackPrinceton Team</p>
                       </div>
                     </div>
 
-                    <img src="https://gallery.mailchimp.com/53efbc735a8d749c8eca8db43/images/95178a7a-b20b-4d1b-afc5-a39c1e2208ba.png" alt="HackPrinceton" width="50" />
+                    <img src="https://gallery.mailchimp.com/53efbc735a8d749c8eca8db43/images/859cef2c-a6cc-404b-8a34-b5e547a965be.png" alt="HackPrinceton" width="30" />
                     <br /><br />
 
                     <div class="footerContent">
-                      <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                      <em>&copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*.</em>
                       <br />
-                      *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
+                      *|IFNOT:ARCHIVE_PAGE|*
+                      *|LIST:DESCRIPTION|*
                       <br />
-                      <em>Our mailing address is:</em>
-                      <br />
-                      *|HTML:LIST_ADDRESS_HTML|**|END:IF|*
+                      *|HTML:LIST_ADDRESS_HTML|*
+                      *|END:IF|*
                       <br /><br/>
                       <a href="*|ARCHIVE|*" target="_blank">view in browser</a> | <a href="*|UNSUB|*">unsubscribe</a> | <a href="*|UPDATE_PROFILE|*">update subscription preferences</a>
                     </div>
